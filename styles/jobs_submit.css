@@ -1,0 +1,124 @@
+/* Theme Variables */
+:root {
+    --primary-navy: #153448;
+    /* Deep Navy Blue */
+    --secondary-blue: #3C5B6F;
+    /* Darker Blue */
+    --accent-sky: #6CB3F9;
+    /* Bright Sky Blue - Success Color */
+    --primary-text: #2c3e50;
+    /* Dark Grey Text */
+    --bg-light: #f4f7fa;
+    /* Soft Light Blueish-Grey Background */
+    --card-white: #ffffff;
+    /* Pure White */
+    --shadow-subtle: 0 10px 30px rgba(21, 52, 72, 0.25);
+    /* Deeper shadow */
+}
+
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-light);
+    color: var(--primary-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-sky);
+    transition: color 0.2s;
+}
+
+/* Confirmation Box Styling */
+.confirmation-box {
+    background: var(--card-white);
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-subtle);
+    max-width: 550px;
+    width: 90%;
+    border-top: 10px solid var(--accent-sky);
+}
+
+/* Success Icon */
+.confirmation-box .success-icon {
+    font-size: 85px;
+    color: var(--accent-sky);
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* Success Message Heading */
+.confirmation-box h2 {
+    font-size: 34px;
+    color: var(--primary-navy);
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/* Secondary Text */
+.confirmation-box .message-details {
+    font-size: 17px;
+    color: var(--secondary-blue);
+    margin-bottom: 35px;
+    line-height: 1.8;
+    padding: 0 10px;
+}
+
+/* Back Button */
+.back-btn {
+    background: var(--primary-navy);
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all .3s ease;
+    box-shadow: 0 6px 15px rgba(21, 52, 72, 0.4);
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background: var(--accent-sky);
+    color: var(--primary-navy);
+    box-shadow: 0 8px 20px rgba(108, 179, 249, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .confirmation-box {
+        padding: 40px 20px;
+    }
+
+    .confirmation-box .success-icon {
+        font-size: 70px;
+    }
+
+    .confirmation-box h2 {
+        font-size: 28px;
+    }
+
+    .confirmation-box .message-details {
+        font-size: 15px;
+    }
+
+    .back-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}

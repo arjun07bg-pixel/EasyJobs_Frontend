@@ -1,0 +1,390 @@
+/* Navy Blue and White Theme Variables */
+:root {
+    --primary-navy: #153448;
+    /* Deep Navy Blue - Main Header/Accent */
+    --secondary-blue: #3C5B6F;
+    /* Darker Blue - Footer/Hover */
+    --accent-sky: #6CB3F9;
+    /* Bright Sky Blue - Highlights/Stats/Links */
+    --primary-text: #2c3e50;
+    /* Dark Grey Text */
+    --bg-light: #f9fbfd;
+    /* Very Light Blueish-White Background */
+    --card-white: #ffffff;
+    /* Pure White Card Background */
+    --muted-grey: #95a5a6;
+    /* Muted Grey Text */
+    --shadow-subtle: 0 4px 15px rgba(21, 52, 72, 0.15);
+}
+
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-light);
+    color: var(--primary-text);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-sky);
+    transition: color 0.2s;
+}
+
+/* Header Styling (Deep Navy Blue) */
+header {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 36px 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header p {
+    opacity: 0.95;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* Hero Section (Light Background with Navy Text) */
+.hero-section {
+    background: var(--card-white);
+    color: var(--primary-text);
+    text-align: center;
+    padding: 56px 16px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid var(--accent-sky);
+}
+
+.hero-section h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: var(--primary-navy);
+}
+
+.hero-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+}
+
+/* Stats in Hero */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #e9f2fb;
+    border: 1px solid #cce0f6;
+}
+
+.stat-box .number {
+    font-size: 42px;
+    font-weight: 900;
+    display: block;
+    color: var(--accent-sky);
+}
+
+.stat-box .label {
+    font-size: 14px;
+    margin-top: 6px;
+    opacity: 0.95;
+    color: var(--primary-text);
+}
+
+/* Container and Title */
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto 48px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-navy);
+    font-size: 30px;
+    margin: 48px 0 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-sky);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Job Card List (Grid setup for 9 boxes) */
+.job-list {
+    display: grid;
+    /* Adjust grid to nicely fit 9 items - auto-fit provides flexibility */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.job-card {
+    background: var(--card-white);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: var(--shadow-subtle);
+    border-left: 6px solid var(--accent-sky);
+    transition: all .35s;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+    border-left-color: var(--primary-navy);
+    box-shadow: 0 12px 35px rgba(21, 52, 72, 0.25);
+}
+
+.job-title {
+    font-size: 20px;
+    color: var(--primary-navy);
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job-title i {
+    color: var(--secondary-blue);
+}
+
+.company {
+    font-weight: 600;
+    color: var(--secondary-blue);
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.location {
+    font-size: 14px;
+    color: var(--muted-grey);
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.details {
+    font-size: 14px;
+    color: var(--primary-text);
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.salary {
+    font-size: 15px;
+    color: var(--primary-navy);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* Navy Apply Button */
+.apply-btn {
+    background: var(--primary-navy);
+    color: #fff;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background .2s;
+    box-shadow: 0 4px 10px rgba(21, 52, 72, 0.4);
+}
+
+.apply-btn:hover {
+    background: var(--secondary-blue);
+}
+
+/* Skills Section (Light Background, Navy Accent) */
+.skills-section {
+    background: var(--card-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-subtle);
+    margin-bottom: 36px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background: var(--bg-light);
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-sky);
+    transition: transform .25s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(21, 52, 72, 0.1);
+}
+
+.skill-category h3 {
+    color: var(--primary-navy);
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    padding: 7px 0;
+    border-bottom: 1px solid #e0e7e6;
+    color: var(--primary-text);
+}
+
+.skill-category li:last-child {
+    border: none;
+}
+
+.skill-category li::before {
+    content: "✓";
+    color: var(--accent-sky);
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* Career Path Section (Navy Blue Background) */
+.career-path-section {
+    background: var(--primary-navy);
+    padding: 36px;
+    border-radius: 12px;
+    color: #fff;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.career-level {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border-left: 5px solid var(--accent-sky);
+}
+
+.career-level h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.career-level p strong {
+    color: var(--accent-sky);
+}
+
+/* Certifications Section (Navy Cards) */
+.certifications-section {
+    background: var(--card-white);
+    padding: 36px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-subtle);
+    margin-bottom: 36px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: var(--secondary-blue);
+    color: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .25s, background .2s;
+    box-shadow: 0 4px 10px rgba(21, 52, 72, 0.3);
+}
+
+.cert-card:hover {
+    transform: scale(1.04);
+    background: var(--primary-navy);
+}
+
+.cert-card i {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: var(--accent-sky);
+}
+
+/* Salary Section (Darker Blue) */
+.salary-section {
+    background: var(--secondary-blue);
+    color: #fff;
+    padding: 36px;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.salary-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.salary-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.salary-row.header {
+    background: rgba(108, 179, 249, 0.3);
+    /* Sky Blue header */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Companies Section (White Card, Navy Text) */

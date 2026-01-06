@@ -1,0 +1,165 @@
+/* =========================
+   Global Layout
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+}
+
+/* =========================
+   Application Form
+========================= */
+.application-form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 40px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.application-form h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #0a2540;
+}
+
+/* =========================
+   Form Fields
+========================= */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.required {
+    color: red;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================
+   File Upload
+========================= */
+.file-upload {
+    display: block;
+    padding: 18px;
+    border: 2px dashed #c7d2fe;
+    border-radius: 8px;
+    text-align: center;
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+.file-upload input {
+    display: none;
+}
+
+/* =========================
+   Submit Button
+========================= */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    opacity: 0.95;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    background-color: #0a2540;
+    padding: 25px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #dbeafe;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+    .application-form {
+        padding: 25px 20px;
+    }
+}

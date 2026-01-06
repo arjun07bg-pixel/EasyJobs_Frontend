@@ -1,0 +1,252 @@
+/* IBM Brand Colors: 
+   Primary Blue: #05445E (Deep Blue)
+   Accent Blue: #0078FF (Brighter Blue)
+   Text/Base: #171717 (Dark Gray/Black)
+*/
+
+/* Base Styles */
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    margin: 0;
+    color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IBM Brand Classes */
+.ibm-bg {
+    background-color: #05445E; /* Primary Deep Blue */
+}
+.ibm-accent-bg {
+    background-color: #0078FF; /* Accent Bright Blue for buttons */
+}
+.ibm-accent-color {
+    color: #0078FF; /* Accent Bright Blue for links/text */
+}
+
+/* Header Banner */
+.header-banner {
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-large {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    /* This style mimics the large IBM logo text */
+    color: white; 
+    letter-spacing: -2px; 
+}
+
+.header-banner h1 {
+    margin: 0 0 5px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main Layout (Sidebar + Listings) */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px; /* Increased gap for cleaner separation */
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 0 0 260px; 
+    background: #fff;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.job-listings {
+    flex-grow: 1;
+}
+
+/* Sidebar Filters */
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #05445E;
+    border-bottom: 3px solid #0078FF; /* Accent Blue separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white; 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Job Listings */
+.job-listings h2 {
+    font-size: 24px;
+    color: #171717;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #0078FF; /* Accent Blue side accent */
+    transition: box-shadow 0.2s;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #05445E;
+    font-weight: 700;
+}
+
+.job-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.job-meta span {
+    margin-right: 20px;
+}
+
+.job-meta .location {
+    color: #0078FF; /* Bright Blue for location icon */
+    font-weight: 500;
+}
+
+.job-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.job-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e6f0ff; /* Very light blue background */
+    color: #05445E;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 500;
+    border: 1px solid #c2d9ff;
+}
+
+.apply-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+/* Apply IBM accent color to the link */
+.apply-link.ibm-accent-color:hover { 
+    border-bottom-color: #0078FF;
+}
+
+.footer {
+    background-color: #05445E;
+    color: #cccccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

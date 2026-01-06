@@ -1,0 +1,249 @@
+/* Wipro Brand Colors: 
+   Primary Dark Blue: #355493 
+   Accent Blue-Green: #3498B3 
+   Light Green: #7DC161 (Used for location pin)
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; /* Light background */
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Wipro Brand Classes */
+.wipro-bg {
+    background-color: #355493; /* Primary Dark Blue */
+}
+.wipro-accent-bg {
+    background-color: #3498B3; /* Accent Blue-Green */
+}
+.wipro-accent-color {
+    color: #3498B3; /* Accent Blue-Green */
+}
+
+/* Header Banner */
+.header-banner {
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-large {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: white; /* White circle background */
+    color: #355493; /* Dark Blue text color */
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 auto 15px;
+    border: 3px solid #3498B3; /* Blue-Green border for emphasis */
+}
+
+.header-banner h1 {
+    margin: 0 0 5px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main Layout (Sidebar + Listings) */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 0 0 280px; /* Slightly wider sidebar */
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.job-listings {
+    flex-grow: 1;
+}
+
+/* Sidebar Filters */
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #355493;
+    border-bottom: 2px solid #3498B3; /* Accent color separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #2a7a8d; /* Darker Blue-Green on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #2a7a8d;
+}
+
+/* Job Listings */
+.job-listings h2 {
+    font-size: 26px;
+    color: #355493;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #355493; /* Primary Blue side accent */
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #355493;
+    font-weight: 500;
+}
+
+.job-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.job-meta span {
+    margin-right: 20px;
+}
+
+.job-meta .location {
+    color: #7DC161; /* Light Green for location icon */
+    font-weight: 600;
+}
+
+.job-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.job-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f7ff; /* Very light blue */
+    color: #355493;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    border: 1px solid #a8c8e5;
+}
+
+.apply-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+/* Apply Wipro accent color to the link */
+.apply-link.wipro-accent-color:hover { 
+    border-bottom-color: #3498B3;
+}

@@ -1,0 +1,493 @@
+
+        /* Dark Blue and White Theme Variables (High Contrast) */
+        :root {
+            --primary-dark: #0a1930;     /* Deep Navy Blue - Main Background/Header */
+            --primary-text: #2c3e50;     /* Dark Text Color */
+            --accent-cyan: #00bcd4;      /* Bright Cyan Blue - Highlight/Buttons/Links */
+            --bg-light: #f4f7f6;         /* Off-White/Light Grey Background */
+            --card-white: #ffffff;       /* Pure White Card Background */
+            --muted-grey: #7f8c8d;       /* Muted Grey Text */
+            --shadow-subtle: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* General Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            background: var(--bg-light);
+            color: var(--primary-text);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-cyan);
+            transition: color 0.2s;
+        }
+
+        /* Header Styling (Deep Navy Blue) */
+        header {
+            background: var(--primary-dark);
+            color: #fff;
+            text-align: center;
+            padding: 36px 16px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        header h1 {
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+
+        header p {
+            opacity: 0.95;
+            margin-top: 8px;
+            font-weight: 500
+        }
+
+        /* Hero Section (Light Background with Navy Text) */
+        .hero-section {
+            background: var(--card-white); /* Pure White */
+            color: var(--primary-text);
+            text-align: center;
+            padding: 56px 16px;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--accent-cyan); /* Cyan divider */
+        }
+
+        .hero-section h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+
+        .hero-section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 17px
+        }
+
+        /* Stats in Hero */
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 25px
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e6e6;
+            background: var(--bg-light);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-box .number {
+            font-size: 42px;
+            font-weight: 700;
+            display: block;
+            color: var(--accent-cyan); /* Cyan numbers */
+        }
+
+        .stat-box .label {
+            font-size: 14px;
+            margin-top: 6px;
+            opacity: 0.95;
+            color: var(--primary-text);
+        }
+
+        /* Container and Title */
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto 48px
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary-dark);
+            font-size: 30px;
+            margin: 48px 0 28px;
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-cyan);
+            margin: 10px auto 0;
+            border-radius: 2px
+        }
+
+        /* Job Card List */
+        .job-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+            margin-bottom: 36px
+        }
+
+        .job-card {
+            background: var(--card-white);
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: var(--shadow-subtle);
+            border-left: 6px solid var(--accent-cyan);
+            transition: all .35s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card:hover {
+            transform: translateY(-6px);
+            border-left-color: var(--primary-dark);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .job-title {
+            font-size: 20px;
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .job-title i {
+            color: var(--accent-cyan);
+        }
+
+        .company {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            font-size: 15px
+        }
+
+        .location {
+            font-size: 14px;
+            color: var(--muted-grey);
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #e5e7eb;
+            padding-bottom: 8px
+        }
+
+        .details {
+            font-size: 14px;
+            color: var(--primary-text);
+            margin-bottom: 16px;
+            flex-grow: 1
+        }
+
+        .salary {
+            font-size: 15px;
+            color: var(--accent-cyan);
+            font-weight: 700;
+            margin-bottom: 14px
+        }
+
+        /* Cyan Apply Button */
+        .apply-btn {
+            background: var(--accent-cyan);
+            color: #fff;
+            padding: 10px 14px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background .2s;
+            box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+        }
+
+        .apply-btn:hover {
+            background: #008f9c; /* Darker Cyan */
+        }
+
+        /* Skills Section (Light Background, Navy Accent) */
+        .skills-section {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-subtle);
+            margin-bottom: 36px;
+            border: 1px solid #e0e6e6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px
+        }
+
+        .skill-category {
+            background: var(--card-white); 
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-dark); /* Navy border */
+            transition: transform .25s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-dark);
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0
+        }
+
+        .skill-category li {
+            padding: 7px 0;
+            border-bottom: 1px solid #e0e7ff;
+            color: var(--primary-text);
+        }
+
+        .skill-category li:last-child {
+            border: none
+        }
+
+        .skill-category li::before {
+            content: "✓";
+            color: var(--accent-cyan); /* Cyan checkmark */
+            font-weight: 700;
+            margin-right: 8px
+        }
+
+        /* Career Path Section (Dark Navy Background) */
+        .career-path-section {
+            background: var(--primary-dark);
+            padding: 36px;
+            border-radius: 12px;
+            color: #fff;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .career-level {
+            background: rgba(255, 255, 255, 0.15); /* Semi-transparent white card on dark background */
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            border-left: 5px solid var(--accent-cyan); /* Cyan border */
+        }
+
+        .career-level h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+            color: #fff
+        }
+
+        .career-level p strong {
+            color: var(--accent-cyan); /* Cyan salary highlight */
+        }
+
+        /* Certifications Section (White Background, Cyan Cards) */
+        .certifications-section {
+            background: var(--card-white);
+            padding: 36px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-subtle);
+            margin-bottom: 36px
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px
+        }
+
+        .cert-card {
+            background: var(--accent-cyan);
+            color: #fff;
+            padding: 24px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform .25s;
+            box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+        }
+
+        .cert-card:hover {
+            transform: scale(1.04)
+        }
+
+        .cert-card i {
+            font-size: 36px;
+            margin-bottom: 8px
+        }
+
+        /* Salary Section (Darker Blue Background) */
+        .salary-section {
+            background: var(--primary-dark);
+            color: #fff;
+            padding: 36px;
+            border-radius: 12px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .salary-table {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden
+        }
+
+        .salary-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 14px 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+        }
+
+        .salary-row.header {
+            background: rgba(0, 188, 212, 0.3); /* Cyan header */
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Companies Section (White Card, Navy Text) */
+        .companies-section {
+            background: var(--card-white);
+            padding: 36px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-subtle);
+            margin-bottom: 36px;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px
+        }
+
+        .company-logo {
+            background: var(--bg-light); /* Light background for logos */
+            padding: 24px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-dark);
+            border: 2px solid #e0e6e6;
+            transition: all .2s
+        }
+
+        .company-logo:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer (Dark Navy) */
+        footer {
+            background: var(--primary-dark);
+            color: #fff;
+            padding: 36px 18px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 14px;
+            flex-wrap: wrap
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.95
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+            color: var(--accent-cyan);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 10px
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+             color: var(--accent-cyan);
+        }
+
+        /* Media Queries */
+        @media(max-width:768px) {
+            header h1 {
+                font-size: 26px
+            }
+
+            .hero-section h2 {
+                font-size: 28px
+            }
+
+            .section-title {
+                font-size: 22px
+            }
+
+            .salary-row {
+                grid-template-columns: 1fr;
+                gap: 6px;
+                text-align: center;
+            }
+            .salary-row > div:nth-child(2), .salary-row > div:nth-child(3) {
+                border-top: 1px dashed rgba(255, 255, 255, 0.1);
+                padding-top: 5px;
+            }
+            .salary-row.header > div:nth-child(2), .salary-row.header > div:nth-child(3) {
+                border-top: none;
+                padding-top: 0;
+            }
+
+            .job-list, .skills-grid, .cert-grid, .companies-grid {
+                grid-template-columns: 1fr
+            }
+            .stat-box {
+                min-width: 45%;
+            }
+        }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply - EasyJobs</title>
+    <link rel="stylesheet" href="../styles/apply_home.css" />
+</head>
+
+<body>
+
+    <!-- Application Form -->
+    <div class="application-form">
+        <h3>Apply for this Job</h3>
+
+        <form>
+            <div class="form-group">
+                <label>Full Name <span class="required">*</span></label>
+                <input type="text" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+                <label>Email Address <span class="required">*</span></label>
+                <input type="email" placeholder="your.email@example.com" required />
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number <span class="required">*</span></label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+
+            <div class="form-group">
+                <label>Current Location <span class="required">*</span></label>
+                <input type="text" placeholder="City, State" required />
+            </div>
+
+            <div class="form-group">
+                <label>Total Experience <span class="required">*</span></label>
+                <select required>
+                    <option value="">Select experience</option>
+                    <option value="0-1">0-1 years</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5-8">5-8 years</option>
+                    <option value="8-10">8-10 years</option>
+                    <option value="10+">10+ years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Current / Expected Salary (LPA)</label>
+                <input type="text" placeholder="e.g., 15-20" />
+            </div>
+
+            <div class="form-group">
+                <label>Notice Period</label>
+                <select>
+                    <option value="">Select notice period</option>
+                    <option value="immediate">Immediate</option>
+                    <option value="15">15 days</option>
+                    <option value="30">30 days</option>
+                    <option value="60">60 days</option>
+                    <option value="90">90 days</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Cover Letter</label>
+                <textarea placeholder="Tell us why you're a great fit for this role..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Resume <span class="required">*</span></label>
+                <label class="file-upload">
+                    <div class="file-upload-icon">📄</div>
+                    <div class="file-upload-text">Click to upload your resume</div>
+                    <div class="file-upload-hint">PDF, DOC, DOCX (Max 5MB)</div>
+                    <input type="file" accept=".pdf,.doc,.docx" required />
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Submit Application
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+                <a href="#help">Help Center</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 EasyJobs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Job</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/Postjob_home.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div class="job-form-container">
+        <h2>Post a Job</h2>
+        <p class="subtitle">Fill the details to post a new job opening</p>
+
+        <form>
+            <div class="form-group">
+                <label>Job Title *</label>
+                <input type="text" placeholder="e.g. Frontend Developer" required>
+            </div>
+
+            <div class="form-group">
+                <label>Company Name *</label>
+                <input type="text" placeholder="e.g. EasyJobs Pvt Ltd" required>
+            </div>
+
+            <div class="form-group">
+                <label>Job Location *</label>
+                <input type="text" placeholder="City, State" required>
+            </div>
+
+            <div class="form-group">
+                <label>Job Type *</label>
+                <select required>
+                    <option value="">Select job type</option>
+                    <option>Full Time</option>
+                    <option>Part Time</option>
+                    <option>Internship</option>
+                    <option>Contract</option>
+                    <option>Remote</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Experience Required *</label>
+                <select required>
+                    <option value="">Select experience</option>
+                    <option>0 - 1 years</option>
+                    <option>1 - 3 years</option>
+                    <option>3 - 5 years</option>
+                    <option>5+ years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Salary Range (LPA)</label>
+                <input type="text" placeholder="e.g. 3 - 6 LPA">
+            </div>
+
+            <div class="form-group">
+                <label>Job Description *</label>
+                <textarea placeholder="Enter full job description..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Skills Required *</label>
+                <input type="text" placeholder="e.g. HTML, CSS, JavaScript" required>
+            </div>
+
+            <button type="submit" class="post-btn">Post Job</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

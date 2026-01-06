@@ -1,0 +1,251 @@
+/* Paytm Brand Colors: 
+   Primary Dark Blue/Black: #0024A2 (Used for the 'Pay' part of the logo and main backgrounds)
+   Accent Red: #E4002B (Vibrant Red for the 'tm' part and accents)
+   Secondary Text: White
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7; 
+    margin: 0;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Paytm Brand Classes */
+.paytm-bg {
+    background-color: #0024A2; /* Primary Dark Blue */
+}
+.paytm-accent-bg {
+    background-color: #E4002B; /* Accent Red for buttons */
+}
+.paytm-accent-color {
+    color: #E4002B; /* Accent Red for links/text */
+}
+
+/* Header Banner */
+.header-banner {
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-large {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0 auto 10px;
+    color: #E4002B; /* Red letter on dark background */
+}
+
+.header-banner h1 {
+    margin: 0 0 5px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main Layout (Sidebar + Listings) */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px; 
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 0 0 280px; 
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.job-listings {
+    flex-grow: 1;
+}
+
+/* Sidebar Filters */
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #0024A2;
+    border-bottom: 3px solid #E4002B; /* Red separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white; 
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #B30022; /* Darker red on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    color: white; 
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #B30022;
+}
+
+/* Job Listings */
+.job-listings h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #E4002B; /* Red side accent */
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #0024A2;
+    font-weight: 700;
+}
+
+.job-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #eee;
+}
+
+.job-meta span {
+    margin-right: 20px;
+}
+
+.job-meta .location {
+    color: #E4002B; /* Red for location icon */
+    font-weight: 500;
+}
+
+.job-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.job-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ffe0e6; /* Very light red background */
+    color: #E4002B;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 500;
+    border: 1px solid #ffb0b0;
+}
+
+.apply-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+/* Apply Paytm accent color to the link */
+.apply-link.paytm-accent-color:hover { 
+    border-bottom-color: #E4002B;
+}
+
+.footer {
+    background-color: #0024A2;
+    color: #cccccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

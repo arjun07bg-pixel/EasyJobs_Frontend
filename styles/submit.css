@@ -1,0 +1,194 @@
+/* -------------------------------------- */
+/* BASE & LAYOUT STYLES - MODIFIED COLORS */
+/* -------------------------------------- */
+:root {
+    /* Changed Green to Dark Blue */
+    --primary-dark-blue: #001f3f;
+    /* Very Deep Dark Blue (Header/Primary) */
+    --accent-blue: #1c75bc;
+    /* Clear Medium Blue (Success/Accent) */
+    --secondary-blue: #002e5c;
+    /* Slightly Lighter Dark Blue (Hover/Button) */
+    --text-color: #333;
+    /* Dark Grey Text (kept for readability) */
+    --background-color: #f0f4f7;
+    /* Light Greyish Background */
+    --white: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------- */
+/* HEADER STYLES (DARK BLUE) */
+/* -------------------------------------- */
+.header-nav {
+    /* Changed to Primary Dark Blue */
+    background-color: var(--primary-dark-blue);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-circle {
+    /* Placeholder for image */
+    width: 35px;
+    height: 35px;
+    /* Kept white for contrast */
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-section h1 {
+    color: var(--white);
+    font-size: 1.6em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    /* Changed hover color to Secondary Blue */
+    background-color: var(--secondary-blue);
+}
+
+/* -------------------------------------- */
+/* MAIN CONTENT & SUCCESS CARD */
+/* -------------------------------------- */
+.main-content {
+    /* Centers the card vertically and horizontally below the header */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.success-card {
+    background-color: var(--white);
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 31, 63, 0.15);
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.success-icon-box {
+    /* Checkmark Icon Styling */
+    font-size: 60px;
+    color: var(--white);
+    /* Changed background to Accent Blue */
+    background-color: var(--accent-blue);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.header-section h2 {
+    font-size: 2.5em;
+    margin: 0;
+    /* Changed text color to Accent Blue */
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
+.success-message {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Next Steps List */
+.next-steps-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 30px 0;
+    /* Light background for list */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.next-steps-list li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.next-steps-list li:before {
+    content: "→";
+    /* Changed bullet color to Primary Dark Blue */
+    color: var(--primary-dark-blue);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Action Button (Return to Homepage) */
+.submit-button {
+    width: auto;
+    display: inline-block;
+    padding: 30px 110px;
+    /* Changed background to Primary Dark Blue */
+    background-color: var(--primary-dark-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.submit-button:hover {
+    /* Changed hover color to Secondary Blue */
+    background-color: var(--secondary-blue);
+}

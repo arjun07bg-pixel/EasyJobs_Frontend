@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EasyJobs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i> Easy<span
+                    class="logo-accent">Jobs</span></a>
+
+            <!-- <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="pages/jobs.html" class="nav-link">Find Jobs</a></li>
+                    <li><a href="pages/companies.html" class="nav-link">Companies</a></li>
+                    <li><a href="pages/guidance.html" class="nav-link">Guidance</a></li>
+                    <li><a href="pages/contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav> -->
+
+            <!-- <div class="auth-buttons">
+                <a href="pages/register.html" class="btn-register"><i class="fas fa-user-plus"></i> Register</a>
+                <a href="pages/login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We're here to help you find your dream job or hire the perfect candidate.</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>Our support team is ready to assist you with any questions or concerns.</p>
+                        <a href="mailto:support@easyjobs.com">support@easyjobs.com</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>Speak directly with our team Monday to Friday, 9 AM - 6 PM IST.</p>
+                        <a href="tel:+911234567890">+91 123 456 7890</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                        </div>
+                        <p>123 Tech Park, Electronic City<br>Bangalore, Karnataka 560100<br>India</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Working Hours</h3>
+                        </div>
+                        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                            <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+                            <strong>Sunday:</strong> Closed
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span>*</span></label>
+                                <input type="text" id="firstName" class="form-input" placeholder="Nagaarjun" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span>*</span></label>
+                                <input type="text" id="lastName" class="form-input" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span>*</span></label>
+                                <input type="email" id="email" class="form-input" placeholder="arjun.cr7@example.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject <span>*</span></label>
+                            <select id="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="job-seeker">Job Seeker Inquiry</option>
+                                <option value="employer">Employer Services</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea id="message" class="form-textarea"
+                                placeholder="Tell us more about your inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about EasyJobs</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I create an account?</h3>
+                    <p>Click on the 'Register' button in the top right corner, fill in your details, and you'll be ready
+                        to start your job search or post openings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is EasyJobs free for job seekers?</h3>
+                    <p>Yes! Job seekers can create profiles, search jobs, and apply to unlimited positions completely
+                        free of charge.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How can employers post jobs?</h3>
+                    <p>Employers can register for a business account and choose from our flexible pricing plans to start
+                        posting job listings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's your response time?</h3>
+                    <p>We typically respond to all inquiries within 24 hours during business days. Urgent matters are
+                        prioritized.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I edit my profile after creating it?</h3>
+                    <p>Absolutely! You can update your profile, resume, and preferences anytime from your account
+                        dashboard.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer customer support?</h3>
+                    <p>Yes! Our dedicated support team is available via email, phone, and live chat to assist you with
+                        any questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-briefcase"></i> Easy<span class="logo-accent">Jobs</span></h3>
+                    <p>Your trusted partner in finding the perfect job or hiring exceptional talent. Simple, Fast,
+                        Convenient.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Job Seekers</h4>
+                    <div class="footer-links">
+                        <a href="#">Browse Jobs</a>
+                        <a href="#">Companies</a>
+                        <a href="#">Career Guidance</a>
+                        <a href="#">Resume Tips</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Employers</h4>
+                    <div class="footer-links">
+                        <a href="#">Post a Job</a>
+                        <a href="#">Pricing Plans</a>
+                        <a href="#">Talent Search</a>
+                        <a href="#">Employer Resources</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EasyJobs. All rights reserved. | Simple, Fast, Convenient.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

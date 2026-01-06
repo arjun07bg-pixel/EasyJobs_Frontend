@@ -1,0 +1,363 @@
+/* --- CSS Reset and Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Changed to a modern, clean font */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    /* Very light, clean background */
+    color: #343a40;
+    /* Darker, professional text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Color Variables (As per your request) --- */
+:root {
+    --primary-blue: #0A66C2;
+    /* Login Button Color & Main Accent */
+    --dark-navy: #0B2545;
+    /* Footer Background & Logo/Text */
+    --text-white: #FFFFFF;
+    /* White Text */
+    --success-green: #28a745;
+    /* Register Button Color (Slightly improved green) */
+    --hover-blue: #0858a7;
+    --light-gray: #e9ecef;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: var(--dark-navy);
+    /* Dark Navy for a premium feel */
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    position: sticky;
+    /* Make it sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    /* Extra bold */
+    color: var(--text-white);
+}
+
+.logo-accent {
+    color: var(--primary-blue);
+    /* Blue accent on the logo name */
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--text-white);
+    font-weight: 500;
+    padding-bottom: 5px;
+    /* For the subtle underline effect */
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.auth-buttons a {
+    padding: 10px 20px;
+    border-radius: 40px;
+    /* Pill shape buttons for modern look */
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-register {
+    background-color: var(--success-green);
+    color: var(--text-white);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.btn-register:hover {
+    background-color: #1e7e34;
+    transform: translateY(-2px);
+}
+
+.btn-login {
+    background-color: var(--text-white);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.btn-login:hover {
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+/* --- Hero/Search Section --- */
+.hero-section {
+    background: linear-gradient(135deg, var(--text-white) 70%, #d8eaff 100%);
+    /* Gradient background */
+    text-align: center;
+    padding: 120px 20px 80px;
+    /* Increased padding */
+}
+
+.tagline {
+    color: var(--primary-blue);
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: 40px;
+}
+
+/* Highlighted text within H1 */
+.hero-content h1 strong {
+    color: var(--primary-blue);
+}
+
+/* Sleek Job Search Form Styles */
+.job-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--text-white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Stronger shadow for depth */
+}
+
+.search-input-group {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 5px 10px;
+}
+
+.search-icon {
+    color: var(--primary-blue);
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search-input {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    color: var(--dark-navy);
+}
+
+/* Separator line between inputs (only for desktop view) */
+.job-search-form .search-input-group:first-child {
+    border-right: 1px solid var(--light-gray);
+}
+
+.btn-search {
+    padding: 15px 30px;
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-search:hover {
+    background-color: var(--hover-blue);
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.stat-item strong {
+    font-size: 20px;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* --- Featured Categories Section --- */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--dark-navy);
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background-color: var(--text-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    /* Better shadow */
+    border-top: 5px solid var(--primary-blue);
+    /* Blue border for pop */
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    /* Lift up effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    background-color: #f0f8ff;
+    /* Very light blue on hover */
+    cursor: pointer;
+}
+
+.category-icon {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 22px;
+    color: var(--dark-navy);
+    margin-bottom: 5px;
+}
+
+.category-card p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* --- CTA for Employers --- */
+.employer-cta {
+    background-color: var(--primary-blue);
+    padding: 60px 0;
+}
+
+.cta-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--dark-navy);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-text h2 {
+    color: var(--text-white);
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.cta-text p {
+    color: #c9e8ff;
+    font-size: 16px;
+}
+
+.btn-employer {
+    background-color: var(--success-green);
+    color: var(--text-white);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-employer:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-navy);
+    color: var(--text-white);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-blue);
+}
+
+.main-footer p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #adb5bd;
+}

@@ -1,0 +1,431 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fd;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: white;
+            padding: 20px 80px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #4f46e5;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #4f46e5;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #f8f9fd 0%, #e0e7ff 100%);
+        }
+
+        .profile-wrapper {
+            display: flex;
+            gap: 40px;
+            max-width: 1100px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .info-section {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .info-section h1 {
+            font-size: 42px;
+            color: #1e293b;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .info-section p {
+            font-size: 18px;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .benefit-icon::before {
+            content: '✓';
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .benefit-text h3 {
+            font-size: 16px;
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .benefit-text p {
+            font-size: 14px;
+            color: #64748b;
+            margin: 0;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            max-width: 480px;
+            width: 100%;
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+            border-radius: 24px 24px 0 0;
+        }
+
+        .progress-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .progress-step {
+            flex: 1;
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-step.completed,
+        .progress-step.active {
+            background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .step-label {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+        .profile-header h2 {
+            color: #1e293b;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .profile-header p {
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        .profile-image-section {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .profile-image-container {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 24px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            color: #4f46e5;
+            border: 4px solid white;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upload-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 4px solid white;
+        }
+
+        .upload-overlay:hover {
+            transform: scale(1.1) rotate(90deg);
+            box-shadow: 0 8px 28px rgba(79, 70, 229, 0.5);
+        }
+
+        .upload-overlay::before {
+            content: '📷';
+            font-size: 24px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-hint {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 12px;
+        }
+
+        .upload-hint span {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 32px 0;
+        }
+
+        .image-requirements {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .image-requirements h4 {
+            font-size: 14px;
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .requirements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .requirement-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        .requirement-item::before {
+            content: '•';
+            color: #4f46e5;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* .action-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: stretch;
+        } */
+
+        .btn {
+            flex: 1;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #64748b;
+            border: 2px solid #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+            color: #475569;
+        }
+
+        footer {
+            background: white;
+            color: #64748b;
+            text-align: center;
+            padding: 32px;
+            font-size: 14px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        footer a {
+            color: #4f46e5;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 968px) {
+            .profile-wrapper {
+                flex-direction: column;
+            }
+
+            .info-section {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .benefit-item {
+                text-align: left;
+            }
+
+            .info-section h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 14px;
+            }
+
+            .profile-card {
+                padding: 32px 24px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }

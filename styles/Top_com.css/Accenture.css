@@ -1,0 +1,257 @@
+/* Accenture Brand Colors: 
+   Primary Blue: #00A7E3 (The distinct bright blue)
+   Dark Text/Base: #333333 
+   Background: White/Very light gray
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light background */
+    margin: 0;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Accenture Brand Classes */
+.accenture-bg {
+    background-color: #00A7E3; /* Primary Blue */
+}
+.accenture-accent-bg {
+    background-color: #0088CC; /* Slightly darker blue for hover/buttons */
+}
+.accenture-accent-color {
+    color: #00A7E3; /* Primary Blue for links/text */
+}
+
+/* Header Banner */
+.header-banner {
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-large {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: white; /* White circle background */
+    color: #00A7E3; /* Blue text color */
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 auto 15px;
+    box-shadow: 0 0 0 3px #fff; /* White ring effect */
+}
+
+.header-banner h1 {
+    margin: 0 0 5px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main Layout (Sidebar + Listings) */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 0 0 280px; 
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.job-listings {
+    flex-grow: 1;
+}
+
+/* Sidebar Filters */
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333333;
+    border-bottom: 2px solid #00A7E3; /* Blue accent separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h4 {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #0088CC; 
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #0088CC;
+}
+
+/* Job Listings */
+.job-listings h2 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #00A7E3; /* Primary Blue side accent */
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.job-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.job-meta span {
+    margin-right: 20px;
+}
+
+.job-meta .location {
+    color: #00A7E3; /* Blue for location icon */
+    font-weight: 600;
+}
+
+.job-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.job-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e5f5ff; /* Very light blue background */
+    color: #00A7E3;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    border: 1px solid #99d6ff;
+}
+
+.apply-link {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+/* Apply Accenture accent color to the link */
+.apply-link.accenture-accent-color:hover { 
+    border-bottom-color: #00A7E3;
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

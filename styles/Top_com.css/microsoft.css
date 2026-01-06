@@ -1,0 +1,232 @@
+/* Base Styles - Same as previous */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Microsoft Brand Color (Deep Blue) */
+.microsoft-bg {
+    background-color: #0078d4;
+}
+
+.microsoft-color {
+    color: #0078d4;
+}
+
+/* Header Banner */
+.header-banner {
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-large {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0078d4;
+    /* Text color inside logo circle */
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.header-banner h1 {
+    margin: 0 0 5px;
+    font-size: 32px;
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Main Layout (Sidebar + Listings) */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.job-listings {
+    flex-grow: 1;
+}
+
+/* Sidebar Filters */
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    font-size: 15px;
+    color: #0078d4;
+    /* Microsoft color */
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.apply-filters-btn:hover {
+    background-color: #005aa3;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #005aa3;
+}
+
+/* Job Listings */
+.job-listings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.job-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.job-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.job-meta span {
+    margin-right: 15px;
+}
+
+.job-meta .location {
+    color: #ed216a;
+    /* Location icon color (kept pink for contrast) */
+    font-weight: 500;
+}
+
+.job-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.job-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f3f7;
+    color: #6c757d;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.apply-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+
+/* Apply Microsoft Blue color to the link using the class defined earlier */
+.apply-link.microsoft-color:hover {
+    border-bottom-color: #0078d4;
+}
